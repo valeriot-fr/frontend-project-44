@@ -8,10 +8,10 @@ const isEven = (number) => {
 
 export const taskEven = () => 'Answer "yes" if the number is even, otherwise answer "no".'
 
-
 const brainEven = () => {
     const randomNumber = getRandomNumber();
     const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
     return [correctAnswer, `Question: ${randomNumber}\nYour answer:`];
 };
+
 export default brainEven;
