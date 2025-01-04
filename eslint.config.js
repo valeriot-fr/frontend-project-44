@@ -1,12 +1,3 @@
-// import globals from "globals";
-// import pluginJs from "@eslint/js";
-
-
-// export default [
-//   {languageOptions: { globals: globals.node }},
-//   pluginJs.configs.recommended,
-// ];
-// eslint.config.mjs
 import globals from "globals";
 
 import path from "path";
@@ -21,5 +12,5 @@ const compat = new FlatCompat({baseDirectory: __dirname, recommendedConfig: plug
 
 export default [
   {languageOptions: { globals: globals.node }},
-  ...compat.extends("airbnb-base"),
+  ...compat.extends("airbnb"),
 ];
