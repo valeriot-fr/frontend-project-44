@@ -49,8 +49,8 @@ const main = () => {
       console.log(taskBrainPrime());
       handler = brainPrime;
       break;
-    default
-      return;
+    default:
+      break;
   }
   condition(userName, handler);
 };
