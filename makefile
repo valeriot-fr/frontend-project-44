@@ -3,7 +3,7 @@ install:
 brain-games: 
 	node bin/brain-games.js
 brain-even: 
-	node src/index.js brain-even
+	node src/index.js brublishin-even
 brain-calc:
 	node src/index.js brain-calc
 brain-gcd:
