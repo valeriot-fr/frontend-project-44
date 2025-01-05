@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import brainEven, { taskEven } from '../bin/games/brain-even';
-import brainCalc, { taskCalc } from '../bin/games/brain-calc';
-import brainGCD, { taskGCD } from '../bin/games/brain-gcd';
-import brainProgression, { taskProgression } from '../bin/games/brain-progression';
-import brainPrime, { taskBrainPrime } from '../bin/games/brain-prime';
+import brainEven, { taskEven } from './games/brain-even';
+import brainCalc, { taskCalc } from './games/brain-calc';
+import brainGCD, { taskGCD } from './games/brain-gcd';
+import brainProgression, { taskProgression } from './games/brain-progression';
+import brainPrime, { taskBrainPrime } from './games/brain-prime';
 
 const condition = (userName, handler) => {
   let correctAnswersCount = 0;

@@ -10,8 +10,8 @@
   "license": "ISC",
   "type": "module",
   "bin": {
-    "brain-games": "src/index.js brain-games",
-    "brain-even": "src/index.js brain-even",
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
     "brain-calc": "src/index.js brain-calc",
     "brain-gcd": "src/index.js brain-gcd",
     "brain-progression": "src/index.js brain-progression",
