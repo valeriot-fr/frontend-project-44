@@ -22,4 +22,4 @@ const main = (task, GameData) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-main();
+export default main;
