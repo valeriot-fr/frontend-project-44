@@ -1,13 +1,20 @@
+/* eslint-disable import/extensions */
+import main from '../index.js';
+
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
 const isEven = (number) => number % 2 === 0;
 
-export const taskEven = () => 'Answer "yes" if the number is even, otherwise answer "no".';
+export const task = () => 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const brainEven = () => {
+const GameData = () => {
   const randomNumber = getRandomNumber();
   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [correctAnswer, `Question: ${randomNumber}\nYour answer:`];
 };
 
-export default brainEven;
+const startGame = () => {
+  main(task, GameData);
+};
+
+export default startGame;

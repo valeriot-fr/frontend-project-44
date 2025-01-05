@@ -1,3 +1,6 @@
+/* eslint-disable import/extensions */
+import main from '../index.js';
+
 const generateProgression = () => {
   const length = Math.floor(Math.random() * 6) + 5;
   const start = Math.floor(Math.random() * 10) + 1;
@@ -13,10 +16,15 @@ const generateProgression = () => {
   return [correctAnswer, progression.join()];
 };
 
-export const taskProgression = () => 'What number is missing in the progression?';
+export const task = () => 'What number is missing in the progression?';
 
-const brainProgression = () => {
+const GameData = () => {
   const [correctAnswer, progression] = generateProgression();
   return [correctAnswer.toString(), `Question: ${progression}\nYour answer: `];
 };
-export default brainProgression;
+
+const startGame = () => {
+  main(task, GameData);
+};
+
+export default startGame;

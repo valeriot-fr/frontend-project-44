@@ -1,11 +1,13 @@
-// рандомное число
+/* eslint-disable import/extensions */
+import main from '../index.js';
+
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-// рандомный оператор
+
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
   return operators[Math.floor(Math.random() * operators.length)];
 };
-// вычисление выражения
+
 const calculateExpression = (num1, num2, operator) => {
   switch (operator) {
     case '+':
@@ -18,9 +20,9 @@ const calculateExpression = (num1, num2, operator) => {
       return null;
   }
 };
-export const taskCalc = () => 'What is the result of the expression?';
+export const task = () => 'What is the result of the expression?';
 
-const brainCalc = () => {
+const GameData = () => {
   const maxNumber = 20;
   const num1 = getRandomNumber(1, maxNumber);
   const num2 = getRandomNumber(1, maxNumber);
@@ -29,4 +31,8 @@ const brainCalc = () => {
   return [correctAnswer.toString(), `Question: ${num1} ${operator} ${num2}\nYour answer: `];
 };
 
-export default brainCalc;
+const startGame = () => {
+  main(task, GameData);
+};
+
+export default startGame;

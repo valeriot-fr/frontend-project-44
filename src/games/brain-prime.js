@@ -1,3 +1,6 @@
+/* eslint-disable import/extensions */
+import main from '../index.js';
+
 const isPrimeNumber = (a) => {
   let countZero = 0;
   for (let i = 1; i < a; i += 1) {
@@ -7,10 +10,15 @@ const isPrimeNumber = (a) => {
 };
 
 const getRandomNumber = (max) => Math.floor(Math.random() * max) + 1;
-export const taskBrainPrime = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const task = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const brainPrime = () => {
+const GameData = () => {
   const num = getRandomNumber(10);
   return [isPrimeNumber(num), `Question: ${num}\nYour answer: `];
 };
-export default brainPrime;
+
+const startGame = () => {
+  main(task, GameData);
+};
+
+export default startGame;
