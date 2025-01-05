@@ -8,8 +8,7 @@ const main = (task, GameData) => {
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
     const [correctAnswer, question] = GameData();
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question(question).toLowerCase();
+    const userAnswer = readlineSync.question(`Question: ${question}`).toLowerCase();
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
       correctAnswersCount += 1;

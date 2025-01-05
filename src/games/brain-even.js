@@ -10,7 +10,7 @@ const isEven = (number) => number % 2 === 0;
 const GameData = () => {
   const randomNumber = getRandomNumber();
   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
-  return [correctAnswer, `Question: ${randomNumber}\nYour answer:`];
+  return [correctAnswer, `${randomNumber}\nYour answer: `];
 };
 
 const startGame = () => {
