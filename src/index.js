@@ -4,7 +4,7 @@ const main = (task, GameData) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(task);
+  console.log(task());
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
     const [correctAnswer, question] = GameData();

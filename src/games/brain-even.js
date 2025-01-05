@@ -3,9 +3,9 @@ import main from '../index.js';
 
 const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
-const isEven = (number) => number % 2 === 0;
-
 export const task = () => 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (number) => number % 2 === 0;
 
 const GameData = () => {
   const randomNumber = getRandomNumber();
