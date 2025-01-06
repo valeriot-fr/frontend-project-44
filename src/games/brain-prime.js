@@ -14,7 +14,7 @@ export const task = () => 'Answer "yes" if given number is prime. Otherwise answ
 
 const GameData = () => {
   const num = getRandomNumber(10);
-  return [isPrimeNumber(num), `${num}\nYour answer: `];
+  return [isPrimeNumber(num), `${num}`];
 };
 
 const startGame = () => {

@@ -28,7 +28,7 @@ const GameData = () => {
   const num2 = getRandomNumber(1, maxNumber);
   const operator = getRandomOperator();
   const correctAnswer = calculateExpression(num1, num2, operator);
-  return [correctAnswer.toString(), `${num1} ${operator} ${num2}\nYour answer: `];
+  return [correctAnswer.toString(), `${num1} ${operator} ${num2}`];
 };
 
 const startGame = () => {

@@ -20,7 +20,7 @@ export const task = () => 'What number is missing in the progression?';
 
 const GameData = () => {
   const [correctAnswer, progression] = generateProgression();
-  return [correctAnswer.toString(), `${progression}\nYour answer: `];
+  return [correctAnswer.toString(), `${progression}`];
 };
 
 const startGame = () => {

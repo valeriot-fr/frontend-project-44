@@ -20,7 +20,7 @@ const GameData = () => {
   const num1 = getRandomNumber(10);
   const num2 = getRandomNumber(10);
   const correctAnswer = greatestCommonDevisor(num1, num2);
-  return [correctAnswer.toString(), `${num1} ${num2}\nYour answer: `];
+  return [correctAnswer.toString(), `${num1} ${num2}`];
 };
 
 const startGame = () => {
