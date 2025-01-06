@@ -19,13 +19,12 @@
 [![Actions Status](https://github.com/valeriot-fr/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/valeriot-fr/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/valeriot-fr/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/294e83f9e2f0d530dfc5/maintainability" /></a>
 
+<a href="./img/brain-even.jpg">brain-even</a>
 
-[![asciicast](https://asciinema.org/a/Rt6huTxFtaOUQyFelmC3pXDfl.svg)](https://asciinema.org/a/Rt6huTxFtaOUQyFelmC3pXDfl) -brain-calc
+<a href="./img/brain-calc.jpg">brain-calc</a>
 
-[![asciicast](https://asciinema.org/a/tqBSKOfgpiu5r1cS2MD6jrgxR.svg)](https://asciinema.org/a/tqBSKOfgpiu5r1cS2MD6jrgxR) -brain-even
+<a href="./img/brain-gcd.jpg">brain-gcd</a>
 
-[![asciicast](https://asciinema.org/a/GwPaoUtS4xdLn5hHySzr7l17D.svg)](https://asciinema.org/a/GwPaoUtS4xdLn5hHySzr7l17D) -brain-gcd
+<a href="./img/brain-prime.jpg">brain-prime</a>
 
-[![asciicast](https://asciinema.org/a/Uz1Oz6EMxKP6kOcYV4MzAoNi0.svg)](https://asciinema.org/a/Uz1Oz6EMxKP6kOcYV4MzAoNi0) -brain-progression
-
-[![asciicast](https://asciinema.org/a/bLqmKDQYJMjro2Z611FMecVmw.svg)](https://asciinema.org/a/bLqmKDQYJMjro2Z611FMecVmw) -brain-prime
+<a href="./img/brain-progression.jpg">brain-progression</a>
