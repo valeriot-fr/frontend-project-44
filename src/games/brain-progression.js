@@ -13,7 +13,7 @@ const generateProgression = () => {
   const missingIndex = Math.floor(Math.random() * length);
   const correctAnswer = progression[missingIndex];
   progression[missingIndex] = '..';
-  return [correctAnswer, progression.join()];
+  return [correctAnswer, progression.join(' ')];
 };
 
 export const task = () => 'What number is missing in the progression?';
