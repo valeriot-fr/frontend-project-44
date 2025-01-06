@@ -16,7 +16,7 @@ const main = (task, GameData) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      correctAnswersCount = 0;
+      return;
     }
   }
   console.log(`Congratulations, ${userName}!`);
