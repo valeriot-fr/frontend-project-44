@@ -12,10 +12,10 @@
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
-    "brain-calc": "src/index.js brain-calc",
-    "brain-gcd": "src/index.js brain-gcd",
-    "brain-progression": "src/index.js brain-progression",
-    "brain-prime": "src/index.js brain-prime"
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
