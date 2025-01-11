@@ -1,6 +1,6 @@
-import game from '../index.js';
+import main from '../index.js';
 
-generateProgression = () => {
+const generateProgression = () => {
   const length = Math.floor(Math.random() * 6) + 5;
   const start = Math.floor(Math.random() * 10) + 1;
   const step = Math.floor(Math.random() * 5) + 1;
@@ -17,14 +17,13 @@ generateProgression = () => {
 
 export const task = () => 'What number is missing in the progression?';
 
-const gameData = () => {
+const GameData = () => {
   const [correctAnswer, progression] = generateProgression();
   return [correctAnswer.toString(), `${progression}`];
-
 };
 
 const startGame = () => {
-  game(task, gameData);
+  main(task, GameData);
 };
 
 export default startGame;
