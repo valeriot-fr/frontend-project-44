@@ -1,5 +1,5 @@
-/* eslint-disable import/extensions */
-import main from '../index.js';
+import game from '../index.js';
+import getRandomNumber from '../randomNum.js'
 
 const isPrimeNumber = (a) => {
   let countZero = 0;
@@ -9,16 +9,15 @@ const isPrimeNumber = (a) => {
   return countZero === 1 ? 'yes' : 'no';
 };
 
-const getRandomNumber = (max) => Math.floor(Math.random() * max) + 1;
 export const task = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const GameData = () => {
-  const num = getRandomNumber(10);
+const gameData = () => {
+  const num = getRandomNumber(100);
   return [isPrimeNumber(num), `${num}`];
 };
 
 const startGame = () => {
-  main(task, GameData);
+  game(task, gameData);
 };
 
 export default startGame;

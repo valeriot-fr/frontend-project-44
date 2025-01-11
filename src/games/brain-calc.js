@@ -1,7 +1,5 @@
-/* eslint-disable import/extensions */
-import main from '../index.js';
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import game from '../index.js';
+import getRandomNumber from '../randomNum.js'
 
 const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
@@ -17,22 +15,21 @@ const calculateExpression = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      throw new Error('Unknown state!');
   }
 };
 export const task = () => 'What is the result of the expression?';
 
-const GameData = () => {
-  const maxNumber = 20;
-  const num1 = getRandomNumber(1, maxNumber);
-  const num2 = getRandomNumber(1, maxNumber);
+const gameData = () => {
+  const num1 = getRandomNumber(100);
+  const num2 = getRandomNumber(100);
   const operator = getRandomOperator();
   const correctAnswer = calculateExpression(num1, num2, operator);
   return [correctAnswer.toString(), `${num1} ${operator} ${num2}`];
 };
 
 const startGame = () => {
-  main(task, GameData);
+  game(task, gameData);
 };
 
 export default startGame;
