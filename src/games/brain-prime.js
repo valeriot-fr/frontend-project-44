@@ -1,5 +1,5 @@
 import game from '../index.js';
-import getRandomNumber from '../randomNum.js'
+import getRandomNumber from '../randomNum.js';
 
 const isPrimeNumber = (a) => {
   let countZero = 0;

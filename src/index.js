@@ -7,7 +7,7 @@ const game = (task, getGameData) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(task());
-  for(let i = 1; i <= roundCount; i += 1) {
+  for (let i = 1; i <= roundCount; i += 1) {
     const [correctAnswer, question] = getGameData();
     console.log(`Question: ${question} `);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();

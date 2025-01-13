@@ -1,5 +1,5 @@
 import game from '../index.js';
-import getRandomNumber from '../randomNum.js'
+import getRandomNumber from '../randomNum.js';
 
 const isGreatestCommonDevisor = (a, b) => {
   let num1 = a;
