@@ -11,13 +11,13 @@ const isPrimeNumber = (a) => {
 
 export const task = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameData = () => {
+const getGameData = () => {
   const num = getRandomNumber(100);
   return [isPrimeNumber(num), `${num}`];
 };
 
 const startGame = () => {
-  game(task, gameData);
+  game(task, getGameData);
 };
 
 export default startGame;

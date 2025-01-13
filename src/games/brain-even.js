@@ -5,14 +5,14 @@ export const task = () => 'Answer "yes" if the number is even, otherwise answer 
 
 const isEven = (number) => number % 2 === 0;
 
-const gameData = () => {
+const getGameData = () => {
   const randomNumber = getRandomNumber(100);
   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
   return [correctAnswer, `${randomNumber} `];
 };
 
 const startGame = () => {
-  game(task, gameData);
+  game(task, getGameData);
 };
 
 export default startGame;

@@ -14,7 +14,7 @@ const isGreatestCommonDevisor = (a, b) => {
 
 export const task = () => 'Find the greatest common divisor of given numbers.';
 
-const gameData = () => {
+const getGameData = () => {
   const num1 = getRandomNumber(100);
   const num2 = getRandomNumber(100);
   const correctAnswer = isGreatestCommonDevisor(num1, num2);
@@ -22,7 +22,7 @@ const gameData = () => {
 };
 
 const startGame = () => {
-  game(task, gameData);
+  game(task, getGameData);
 };
 
 export default startGame;
