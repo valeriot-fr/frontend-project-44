@@ -1,4 +1,4 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import getRandomNumber from '../randomNum.js';
 
 const isGreatestCommonDevisor = (a, b) => {
@@ -12,7 +12,7 @@ const isGreatestCommonDevisor = (a, b) => {
   return num1;
 };
 
-export const task = () => 'Find the greatest common divisor of given numbers.';
+export const outputTask = () => 'Find the greatest common divisor of given numbers.';
 
 const getGameData = () => {
   const num1 = getRandomNumber(100);
@@ -22,7 +22,7 @@ const getGameData = () => {
 };
 
 const startGame = () => {
-  game(task, getGameData);
+  playGame(outputTask, getGameData);
 };
 
 export default startGame;

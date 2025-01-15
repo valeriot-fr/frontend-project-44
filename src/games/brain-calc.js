@@ -1,7 +1,7 @@
-import game from '../index.js';
+import playGame from '../index.js';
 import getRandomNumber from '../randomNum.js';
 
-export const task = () => 'What is the result of the expression?';
+export const outputTask = () => 'What is the result of the expression?';
 
 const calculateExpression = (num1, num2, character) => {
   switch (character) {
@@ -12,7 +12,7 @@ const calculateExpression = (num1, num2, character) => {
     case '*':
       return num1 * num2;
     default:
-      throw new Error('Unknown character!');
+      throw new Error('Invalid operator!');
   }
 };
 
@@ -26,7 +26,7 @@ const getGameData = () => {
 };
 
 const startGame = () => {
-  game(task, getGameData);
+  playGame(outputTask, getGameData);
 };
 
 export default startGame;

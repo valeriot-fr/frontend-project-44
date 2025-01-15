@@ -1,4 +1,4 @@
-import main from '../index.js';
+import playGame from '../index.js';
 import getRandomNumber from '../randomNum.js';
 
 const generateProgression = (length, start, step) => {
@@ -9,7 +9,7 @@ const generateProgression = (length, start, step) => {
   return progression;
 };
 
-export const task = () => 'What number is missing in the progression?';
+export const outputTask = () => 'What number is missing in the progression?';
 
 const getGameData = () => {
   const length = getRandomNumber(5, 10);
@@ -23,7 +23,7 @@ const getGameData = () => {
 };
 
 const startGame = () => {
-  main(task, getGameData);
+  playGame(outputTask, getGameData);
 };
 
 export default startGame;
