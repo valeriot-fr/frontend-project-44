@@ -20,7 +20,7 @@ const getGameData = () => {
 };
 
 const startGame = () => {
-  const outputTask =  'Find the greatest common divisor of given numbers.';
+  const outputTask = 'Find the greatest common divisor of given numbers.';
   playGame(outputTask, getGameData);
 };
 
