@@ -9,20 +9,19 @@ const generateProgression = (length, start, step) => {
   return progression;
 };
 
-export const outputTask = () => 'What number is missing in the progression?';
-
 const getGameData = () => {
   const length = getRandomNumber(5, 10);
   const start = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
   const progression = generateProgression(length, start, step);
-  const missingIndex = Math.floor(Math.random() * length);
+  const missingIndex = getRandomNumber(1, length);
   const correctAnswer = String(progression[missingIndex]);
   progression[missingIndex] = '..';
   return [correctAnswer, progression.join(' ')];
 };
 
 const startGame = () => {
+  const outputTask = 'What number is missing in the progression?';
   playGame(outputTask, getGameData);
 };
 

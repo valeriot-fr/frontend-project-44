@@ -1,15 +1,15 @@
 import playGame from '../index.js';
 import getRandomNumber from '../randomNum.js';
 
-const checkIfPrimeNumber = (a) => {
-  let countZero = 0;
-  for (let i = 1; i < a; i += 1) {
-    countZero = a % i === 0 ? countZero + 1 : countZero;
+const isPrime = (num) => {
+  if (num < 2) return false;
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {;
+    if (num % i === 0) return false;
   }
-  return countZero === 1 ? 'yes' : 'no';
+return true;
 };
 
-export const outputTask = () => 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const checkIfPrimeNumber = (num) => (isPrime(num) ? 'yes' : 'no');
 
 const getGameData = () => {
   const num = getRandomNumber(100);
@@ -17,6 +17,7 @@ const getGameData = () => {
 };
 
 const startGame = () => {
+  const outputTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   playGame(outputTask, getGameData);
 };
 
