@@ -14,7 +14,7 @@ const getGameData = () => {
   const start = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
   const progression = generateProgression(length, start, step);
-  const missingIndex = getRandomNumber(1, length);
+  const missingIndex = getRandomNumber(1, length - 1);
   const correctAnswer = String(progression[missingIndex]);
   progression[missingIndex] = '..';
   return [correctAnswer, progression.join(' ')];
